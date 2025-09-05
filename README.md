@@ -1,4 +1,4 @@
-# AI Chatbot
+# 🤖 AI Chatbot
 
 **AI Chatbot** is an AI-powered web application for conversational Q&A with URL/file understanding and citations. Ask questions about documents or links you provide—or just chat to learn or have some fun. *(Note: the model doesn’t have real-time information.)*
 
