@@ -1,0 +1,21 @@
+<div class="row" [class.user]="message.role==='user'">
+  <div class="avatar">{{ message.role==='user' ? '🧑' : (message.role==='tool' ? '🧰' : '🤖') }}</div>
+  <div class="bubble">
+    <div class="meta">
+      <span class="role">{{ message.role }}</span>
+      <span class="time">{{ message.timestamp | date:'shortTime' }}</span>
+    </div>
+    <div class="content bubble-content" [innerHTML]="message.content | linkify"></div>
+    @if (message.attachments?.length) {
+      <div class="files">
+        @for (f of (message.attachments ?? []); track $index) {
+          <div class="file-pill">
+            📎 {{ f.name }}
+            <small>({{ (f.size / 1024) | number:'1.0-0' }} KB)</small>
+          </div>
+        }
+      </div>
+    }
+
+  </div>
+</div> 

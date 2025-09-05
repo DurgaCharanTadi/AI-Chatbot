@@ -1,0 +1,9 @@
+<div class="wrap">
+  @for (m of msgs(); track m.id) {
+    <app-message-bubble [message]="m"></app-message-bubble>
+  }
+  @if (streaming()) {
+    <app-typing-indicator></app-typing-indicator>
+  }
+</div>
+

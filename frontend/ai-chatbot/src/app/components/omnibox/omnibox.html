@@ -1,0 +1,45 @@
+<div class="wrap">
+  <div class="tools">
+    <button class="chip" (click)="chat.clear()">New topic</button>
+  </div>
+
+  <div class="box">
+    <div class="left">
+      <button class="icon-btn" title="Attach files" (click)="file.click()">📎</button>
+      <input #file type="file" multiple hidden (change)="attach($event)" />
+    </div>
+
+    <textarea #ta autosize [(ngModel)]="text" (input)="onInput()" (keydown.enter)="onEnter($event)"
+      [placeholder]="mode==='search' ? 'Message the assistant…' : 'Message the assistant…'"></textarea>
+
+    <div class="right">
+      <button class="send" title="Send" (click)="submit()">➤</button>
+    </div>
+  </div>
+
+    @if (files.length) {
+        <div class="files">
+        @for (f of files; track $index; let i = $index) {
+            <div class="file-pill">
+            {{ f.name }}
+            <button class="x" (click)="removeFile(i)">✕</button>
+            </div>
+        }
+        </div>
+    }
+
+    @if (showCmds) {
+    <div class="cmds">
+        @for (c of commands; track c.key) {
+        <div class="cmd">
+            <span class="key">{{ c.key }}</span>
+            <span class="desc">{{ c.description }}</span>
+        </div>
+        }
+    </div>
+    }
+
+  <div class="tips">
+    <span>Enter to send • Shift+Enter for newline • <span class="code">/</span> for commands</span>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.shell {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  height: calc(100vh - 56px);
+}
+
+/* minus header */
+.thread {
+  overflow: auto;
+}
+
+.omnibox {
+  border-top: 1px solid var(--border)
+}

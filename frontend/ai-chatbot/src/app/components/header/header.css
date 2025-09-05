@@ -1,0 +1,47 @@
+.hdr {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  height: 60px;
+  padding: 0 12px;
+
+  background: linear-gradient(180deg, rgba(17,18,24,0.95), rgba(17,18,24,0.70));
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(6px);
+}
+
+.brand {
+  display: flex;
+  justify-content: space-between; /* pushes first svg left, second right */
+  align-items: center;
+  width: 100%;
+  padding: 0 1rem;
+  gap: 12px;
+  pointer-events: cursor;
+}
+
+/* Scale the SVG to fit cleanly inside 40px header */
+.brand .logo {
+  display: block;
+  height: 48px;         /* visual height inside 40px header */
+  width: auto;          /* preserve aspect */
+  pointer-events: none; /* prevents accidental text selection/clicks */
+}
+
+
+@media (max-width: 480px) {
+  .brand .logo { height: 24px; }
+}
+
+
+.word { font: 600 18px system-ui, -apple-system, Segoe UI, Roboto, Inter, sans-serif; fill: #f4f6fb; letter-spacing: .2px; }
+.sub  { font: 400 12px system-ui, -apple-system, Segoe UI, Roboto, Inter, sans-serif; fill: rgba(244,246,251,.8); }
+.thin { font-weight: 500; }
+.cap  { text-transform: uppercase; }
+.gfill   { fill: url(#g-brand); }
+.gstroke { stroke: url(#g-brand); }
+.badge   { fill: none; stroke: url(#g-brand); stroke-width: 2; }

@@ -1,0 +1,10 @@
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.25rem
+}
+
+:host {
+  display: block;
+  height: 100%;
+}

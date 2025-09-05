@@ -1,0 +1,65 @@
+.row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin: 10px 0
+}
+
+.row.user {
+  flex-direction: row-reverse
+}
+
+.avatar {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: 50%
+}
+
+.bubble {
+  max-width: 80%;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: .75rem .9rem;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .15)
+}
+
+.row.user .bubble {
+  background: linear-gradient(180deg, rgba(110, 168, 254, .18), rgba(110, 168, 254, .08));
+}
+
+.meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: var(--muted);
+  font-size: 12px;
+  margin-bottom: .25rem
+}
+
+.content {
+  white-space: pre-wrap
+}
+
+.files {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: .5rem
+}
+
+.file-pill {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, .03);
+  padding: .25rem .5rem;
+  border-radius: 999px
+}
+
+.bubble-content {
+  white-space: pre-wrap;    /* keep \n from SSE */
+  word-break: break-word;   /* avoid overflow on long tokens/URLs */
+}

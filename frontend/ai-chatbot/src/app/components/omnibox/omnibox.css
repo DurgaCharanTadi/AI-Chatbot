@@ -1,0 +1,129 @@
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: .8rem 1.25rem;
+  background: linear-gradient(180deg, rgba(21, 23, 36, .86), rgba(21, 23, 36, .86));
+}
+
+.tools {
+  display: flex;
+  gap: 8px;
+  margin-bottom: .6rem
+}
+
+.chip {
+  background: rgba(255, 255, 255, .06);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: .25rem .6rem;
+  border-radius: 999px
+}
+/* 
+.chip[aria-pressed="true"] {
+  outline: 1px solid var(--brand)
+} */
+
+
+.box {
+  display: grid;
+  grid-template-columns: 32px 1fr 70px;
+  align-items: end;
+  gap: 10px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: .6rem
+}
+
+.left{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: .25rem
+}
+
+.right {
+  display: flex;
+  align-items: flex-end;
+  padding: .25rem
+}
+
+.icon-btn {
+  border: 1px solid var(--border);
+  background: transparent;
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center
+}
+
+textarea {
+  width: 100%;
+  min-height: 32px!important;
+  resize: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text);
+  line-height: 1.35;
+  padding: .25rem;
+  max-height: 240px
+}
+
+.send {
+  border: 1px solid var(--border);
+  background: var(--brand);
+  color: #0b1220;
+  border-radius: 10px;
+  padding: .45rem .65rem;
+  font-weight: 700
+}
+
+
+.files {
+  margin: .6rem 0 0;
+}
+
+.file-pill {
+  padding: 4px 0;
+}
+
+.file-pill .x {
+  background: transparent;
+  color: var(--muted);
+  border: none
+}
+
+
+.cmds {
+  margin-top: .5rem;
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  padding: .5rem .6rem;
+  display: grid;
+  gap: 6px
+}
+
+.cmd {
+  display: flex;
+  gap: 8px
+}
+
+.cmd .key {
+  width: 88px;
+  color: var(--accent)
+}
+
+.cmd .desc {
+  color: var(--muted)
+}
+
+.tips {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: .5rem
+}
