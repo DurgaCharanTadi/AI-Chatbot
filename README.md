@@ -14,10 +14,10 @@
 - **✅ Conversational Q&A**   
   Drill down into complex documentation from pasted links or uploaded documents.
 
-- **📎 URL & File Understanding with Citations**
+- **📎 URL & File Understanding with Citations**   
   Upload PDFs or share URLs; the app reads them and cites sources in its responses.
 
-- **💬 Follow-Up & Learning Assistant**
+- **💬 Follow-Up & Learning Assistant**   
   Keep the chat going with follow-up questions to test yourself, learn deeply, or just ask for jokes.
 
 ---
