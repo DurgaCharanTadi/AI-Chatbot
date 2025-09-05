@@ -36,13 +36,13 @@
 
 ## ⚙️ How It Works
 
-1. **User Input**:
+1. **User Input**:   
    Type a prompt, paste a URL, or upload a PDF.  
-2. **Content Understanding**:
+2. **Content Understanding**:   
    The app fetches and reads the provided content.  
-3. **Answer Generation**:
+3. **Answer Generation**:   
    Claude 3.5 Sonnet (via Bedrock) produces helpful responses with citations.  
-4. **Results Displayed**:
+4. **Results Displayed**:   
    Answers (with sources) appear in the chat interface.
 
 ---
